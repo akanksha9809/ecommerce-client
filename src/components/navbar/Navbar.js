@@ -9,6 +9,9 @@ function Navbar() {
   const [openCart, setOpenCart] = useState(false);
 
   const categories = useSelector((state) => state.categoryReducer.categories);
+  const cart = useSelector((state) => state.cartReducer.cart);
+  let totalItems = 0;
+  cart.forEach((item) => (totalItems += item.quantity));
 
   return (
     <>
@@ -39,7 +42,7 @@ function Navbar() {
               onClick={() => setOpenCart(!openCart)}
             >
               <BsCart2 className="icon" />
-              <span className="cart-count center">99+</span>
+              {totalItems > 0 && <span className="cart-count center">{totalItems}</span>}
             </div>
           </div>
         </div>

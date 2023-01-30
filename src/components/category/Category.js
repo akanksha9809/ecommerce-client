@@ -2,6 +2,7 @@ import React from "react";
 import "./Category.scss";
 import { useNavigate } from "react-router-dom";
 
+//single category
 function Category({ category }) {
     const navigate = useNavigate();
 
