@@ -8,14 +8,14 @@ const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const product = action.payload.attributes;
-      const curItem = product
+      const curItem = product //productDetails
         ? {
             title: product.title,
             key: product.key,
             price: product.price,
             image: product.image.data.attributes.url,
           }
-        : action.payload;
+        : action.payload; //cart
 
       const index = state.cart.findIndex((item) => item.key === curItem.key);
 
@@ -36,7 +36,11 @@ const cartSlice = createSlice({
         state.cart[index].quantity -= 1;
       }
     },
-    // create an action to removeCartItem
+
+    removeProductFromCart: (state, action) => {
+      const curKey = action.payload?.attributes?.key || action.payload.key;
+      state.cart = state.cart.filter((item) => item.key !== curKey);
+    },
 
     resetCart: (state, action) => {
       state.cart = [];
@@ -46,4 +50,5 @@ const cartSlice = createSlice({
 
 export default cartSlice.reducer;
 
-export const { addToCart, removeFromCart, resetCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, resetCart, removeProductFromCart } =
+  cartSlice.actions;
