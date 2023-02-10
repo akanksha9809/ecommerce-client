@@ -78,13 +78,13 @@ function ProductDetail() {
             <div className="return-policy">
               <ul>
                 <li>
-                  This product is made to order and is typically printed in 3-6
-                  working days. Your entire order will ship out together.
+                  Customers can return any book within 14 days of purchase, as
+                  long as the book is in its original condition.
                 </li>
                 <li>
-                  Since this product is printed on demand especially for you, it
-                  is not eligible for cancellations and returns. Read our Return
-                  Policy.
+                  To be eligible for a return, the book must be in its original
+                  condition, with no markings or damages to the cover, pages, or
+                  spine.
                 </li>
               </ul>
             </div>

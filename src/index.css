@@ -9,7 +9,7 @@
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #888;
-  --accent-color: #8800c7;
+  --accent-color: #fa8900;
 }
 
 body {
@@ -84,9 +84,9 @@ ul {
 }
 
 .btn-primary:hover {
-  background-color: #9800df;
+  background-color: #ffa41c;
 }
 
 .btn-primary:active {
-  background-color: #b413ff;
+  background-color: #fa8900;
 }

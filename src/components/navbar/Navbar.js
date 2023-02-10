@@ -33,7 +33,7 @@ function Navbar() {
           </div>
           <div className="nav-center">
             <Link to="/">
-              <h1 className="banner">Posterz.</h1>
+              <h1 className="banner">The Book House</h1>
             </Link>
           </div>
           <div className="nav-right">

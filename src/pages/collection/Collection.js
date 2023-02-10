@@ -15,12 +15,12 @@ function Collection() {
 
   const sortOptions = [
     {
-      value: "Price - Low To High",
-      sort: "price",
+      value: "Newly Added",
+      sort: "createdAt:desc",
     },
     {
-      value: "Newest First",
-      sort: "createdAt",
+      value: "Price - Low To High",
+      sort: "price",
     },
   ];
 
@@ -49,11 +49,10 @@ function Collection() {
       <div className="container">
         <div className="header">
           <div className="info">
-            <h2>Explore All Print and Artwork</h2>
+            <h2>Explore Our Entire Bookshelf</h2>
             <p>
-              India's largest collection of wall posters for your bedroom,
-              living room, kids room, kitchen and posters & art prints at
-              highest quality lowest price guaranteed.
+              With a vast selection of genres, themes, and styles, our book
+              collection offers something for everyone.
             </p>
           </div>
           <div className="sort-by">

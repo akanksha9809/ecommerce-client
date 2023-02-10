@@ -31,7 +31,7 @@ function Home() {
         <div className="info">
           <h2 className="heading">Shop By Categories</h2>
           <p className="subheading">
-            Shop from the best, our Film and TV Posters Collection.
+          Uncover the Best Books - Our Collection Awaits You.
           </p>
         </div>
         <div className="content">
@@ -44,7 +44,7 @@ function Home() {
       <section className="collection container">
         <div className="info">
           <h2 className="heading">Our Top Picks</h2>
-          <p className="subheading">All New Designs, Same Old Details.</p>
+          <p className="subheading">Find Your Next Must-Read in Our Top Picks Section.</p>
         </div>
         <div className="content">
           {topProducts?.map((product) => (
